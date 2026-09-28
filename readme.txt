@@ -4,7 +4,7 @@ Tags: givewp, donations, cryptocurrency, stablecoin, payment gateway
 Requires at least: 5.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,11 @@ No. This gateway takes a single payment; it does not create a subscription.
 No. Enter your API key and webhook secret and you are live.
 
 == Changelog ==
+
+= 1.3.1 =
+* Messages shown to the donor when a payment cannot be started are now escaped on output.
+* Plugin name changed to "Payzum Crypto & Stablecoin Donations for Give": the WordPress.org
+  directory does not allow "wp" in a plugin name. The slug and the settings are unchanged.
 
 = 1.3.0 =
 * The settled amount and currency are verified against the donation before it is completed. A
