@@ -42,7 +42,7 @@ Payzum never takes custody. No chargebacks, no card networks, no PCI surface.
 ## Installation
 
 **From the release zip (recommended).** Download
-[`payzum-give-1.3.0.zip`](https://github.com/payzum-dev/givewp-payzum/releases/latest), then in WordPress go to
+[`payzum-give-1.3.2.zip`](https://github.com/payzum-dev/givewp-payzum/releases/latest), then in WordPress go to
 **Plugins → Add New → Upload Plugin**, pick the zip and activate it (requires GiveWP). The archive unpacks to
 `payzum-give/`, the folder name WordPress expects.
 

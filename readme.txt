@@ -4,7 +4,7 @@ Tags: givewp, donations, cryptocurrency, stablecoin, payment gateway
 Requires at least: 5.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,10 @@ No. This gateway takes a single payment; it does not create a subscription.
 No. Enter your API key and webhook secret and you are live.
 
 == Changelog ==
+
+= 1.3.2 =
+* Plugin URI now points at the plugin's own repository, so it differs from the Author URI as
+  the plugin directory requires. No functional change.
 
 = 1.3.1 =
 * Messages shown to the donor when a payment cannot be started are now escaped on output.
