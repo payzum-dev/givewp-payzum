@@ -1,4 +1,4 @@
-=== Payzum Crypto & Stablecoin Donations for GiveWP ===
+=== Payzum Crypto & Stablecoin Donations for Give ===
 Contributors: payzum
 Tags: givewp, donations, cryptocurrency, stablecoin, payment gateway
 Requires at least: 5.6

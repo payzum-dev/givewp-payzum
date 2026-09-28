@@ -133,11 +133,11 @@ if ( class_exists( PaymentGateway::class ) && ! class_exists( 'Payzum_Give_Gatew
 			} catch ( \Payzum\Errors\ApiException $e ) {
 				// Branch on the typed code, never on the message.
 				Payzum_Give_Plugin::log( 'create failed for donation ' . $donation->id . ' [' . $e->rawCode . ']: ' . $e->getMessage() );
-				throw new PaymentGatewayException( Payzum_Give_Plugin::buyer_notice_for( $e->rawCode ) );
+				throw new PaymentGatewayException( esc_html( Payzum_Give_Plugin::buyer_notice_for( $e->rawCode ) ) );
 			} catch ( \Payzum\Errors\PayzumException $e ) {
 				Payzum_Give_Plugin::log( 'create failed for donation ' . $donation->id . ': ' . $e->getMessage() );
 				throw new PaymentGatewayException(
-					__( 'Unable to start the crypto payment. Please try again or pick another method.', 'payzum-give' )
+					esc_html__( 'Unable to start the crypto payment. Please try again or pick another method.', 'payzum-give' )
 				);
 			}
 
@@ -145,7 +145,7 @@ if ( class_exists( PaymentGateway::class ) && ! class_exists( 'Payzum_Give_Gatew
 			if ( '' === $invoice_url ) {
 				Payzum_Give_Plugin::log( 'create_payment returned no invoice_url for donation ' . $donation->id . ': ' . wp_json_encode( $result ) );
 				throw new PaymentGatewayException(
-					__( 'Payzum did not return a checkout URL. Please try again.', 'payzum-give' )
+					esc_html__( 'Payzum did not return a checkout URL. Please try again.', 'payzum-give' )
 				);
 			}
 
@@ -192,7 +192,7 @@ if ( class_exists( PaymentGateway::class ) && ! class_exists( 'Payzum_Give_Gatew
 		 */
 		public function refundDonation( Donation $donation ) {
 			throw new PaymentGatewayException(
-				__( 'Payzum is non-custodial: refunds are issued from your own wallet, not from here.', 'payzum-give' )
+				esc_html__( 'Payzum is non-custodial: refunds are issued from your own wallet, not from here.', 'payzum-give' )
 			);
 		}
 	}

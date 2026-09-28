@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Payzum Crypto & Stablecoin Donations for GiveWP
+ * Plugin Name: Payzum Crypto & Stablecoin Donations for Give
  * Plugin URI:  https://payzum.com
  * Description: Accept crypto and stablecoin donations (USDC/USDT, multi-chain) in GiveWP with Payzum. Donors choose the coin on the Payzum checkout. Non-custodial — funds settle to your own wallet.
  * Version:     1.3.0
